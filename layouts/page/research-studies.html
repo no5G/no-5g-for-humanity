@@ -1,0 +1,133 @@
+{{ define "main" }}
+
+<section class="page-header" data-stellar-background-ratio="0.1">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h3>{{ .Title }}</h3>
+      </div>
+    </div> <!-- end .row  -->
+  </div> <!-- end .container  -->
+</section> <!-- end .page-header  -->
+<!--  MAIN CONTENT  -->
+<section class="main-content">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-12">
+        {{ range .Paginator.Pages }}
+        <article class="post single-post">
+          <div class="single-post-content">
+            <a title="" href="single-study.html">
+              {{ with .Params.featured_image }}
+              <img src="{{ . }}" alt="{{ with $.Page.Params.title }}{{ . }}{{ end }}">
+              {{ end }}
+            </a>
+          </div> <!-- end .bd-view  -->
+          <div class="single-post-title">
+            <h2>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2> <!--  end blog-post-title  -->
+            <p class="single-post-meta">                           
+              {{ if .Params.author }}
+              <i class="fa fa-user"></i>
+              &nbsp;{{ .Params.Author }}
+              {{ end }}
+
+              &nbsp;<i class="fa fa-book"></i>
+              {{ if .Params.categories }}
+              {{ range .Params.categories }}
+              &nbsp;<a title="View all posts in  Environment Right " href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}, </a>
+              {{ end }}
+              {{ end }}
+              &nbsp;<i class="fa fa-calendar"></i>
+              &nbsp;{{ dateFormat "Monday, Jan 2, 2006" .Date }}
+            </p>
+            <p>{{ .Summary }}</p>
+            <p class="text-left">
+              <a class="btn readmore" href="{{ .RelPermalink }}">Read More</a>
+            </p>
+          </div> <!-- end col-sm-8  -->
+        </article>
+        {{ end }}
+        <div class="blog-pagination text-center clearfix">  
+          {{ $pag := $.Paginator }}
+          {{ if gt $pag.TotalPages 1 }}              
+          <ul class="pagination">
+            {{ $pag := $.Paginator }}
+            {{ if gt $pag.TotalPages 1 }}
+            {{ $.Scratch.Set "dot_rendered" false }}
+              {{ if $pag.HasPrev  }}
+              <li><a href="{{ $pag.Prev.URL }}" class="prev page-numbers"><i class="fa fa-caret-left"></i></a></li>
+              {{ end }}
+
+              {{ range $pag.Pagers }}
+                {{ if eq . $pag }} <!-- Current Page -->
+                <li class="active"><a href="#" class="page-numbers">{{ .PageNumber }}</a></li>
+                {{ else if and (ge .PageNumber (sub $pag.PageNumber 2)) (le .PageNumber (add $pag.PageNumber 2)) }}
+                {{ $.Scratch.Set "dot_rendered" false }} <!-- Render prev 2 page and next 2 pages -->
+                <li><a href="{{ .URL }}" class="page-numbers current">{{ .PageNumber }}</a></li>
+                {{ else if eq ($.Scratch.Get "dot_rendered") false }} <!-- render skip pages -->
+                {{ $.Scratch.Set "dot_rendered" true }}
+                <li class="disabled"><a class="page-numbers">...</a></li>
+                {{ end }}
+              {{ end }}
+
+              {{ if $pag.HasNext }}
+              <li><a href="{{ $pag.Next.URL }}" class="next page-numbers"><i class="fa fa-caret-right"></i></a></li>
+              {{ end }}
+            {{ end }}
+          </ul> <!-- end pagination  -->
+          {{ end }}
+        </div> <!--  end blog-pagination -->
+      </div> <!--  end col-sm-8 -->
+      <div class="col-md-4 col-sm-12">
+        <!-- <div class="widget site-sidebar">
+          <h2 class="widget-title">Search</h2>
+          <form action="index.html" id="search-form" class="search-form" role="form" method="get">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Search....">
+              <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            </div>
+            <input type="hidden" value="submit" />
+          </form>
+        </div> -->
+        {{ if .Site.Taxonomies.categories }}       
+        <div class="widget site-sidebar">
+          <h2 class="widget-title">Categories</h2>
+            <ul class="widget-post-category clearfix">
+              {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+              {{ $url := printf "%s/%s" "categories" ($name | urlize | lower)}}
+              <li>
+                <a title="View all posts filed under Environment" href="{{ $url | absURL }}">{{$name}}</a>
+                <!-- <span class="pull-right badge">42</span> -->
+              </li>
+              {{ end }}
+            </ul>
+        </div> <!--  end .widget -->
+        {{ end }}
+        <!-- <div class="widget site-sidebar">
+          <h2 class="widget-title">Recent Posts</h2>
+          <div class="single-recent-post">
+            <img alt="" class="single-post-thumb" src="/images/gallery_6.jpg">
+            <a href="#">Zomato Commits to Making Food Delivery Safer </a>
+            <span><i class="fa fa-calendar icon-color"></i>&nbsp;January 19, 2016</span>
+          </div>
+        </div> -->
+        {{ if .Site.Taxonomies.tags }}
+        <div class="widget site-sidebar">
+          <h2 class="widget-title">Tags</h2>
+          <ul class="widget-recent-tags clearfix">
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+            {{ $url := printf "%s/%s" "tags" ($name | urlize | lower)}}
+            <li>
+              <a href="{{ $url | absURL }}" title="{{$name}}"> {{$name}}</a>
+            </li>
+            {{ end }}
+          </ul><!--  end .widget-recent-tags -->
+        </div> <!--  end .widget -->
+        {{ end }}
+      </div> <!-- end .col-sm-4  -->
+    </div> <!--  end row  -->
+  </div> <!--  end container -->
+</section> <!-- end .main-content  -->
+{{ end }}

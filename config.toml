@@ -1,0 +1,12 @@
+baseURL = "https://5g-website.netlify.app/"
+languageCode = "en-us"
+title = "5G Website"
+mainSections = ["protect-yourself", "research-studies"]
+paginate = 3
+summarylength = 66
+
+
+[params]
+  author = "Richard"
+  authorbio = "Advicate against 5G."
+

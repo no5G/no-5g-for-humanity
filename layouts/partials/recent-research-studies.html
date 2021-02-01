@@ -1,0 +1,40 @@
+ <!--  RECENT RESEARCH STUDIES  -->
+
+<section class="section-content-block section-secondary-bg">
+  <div class="container wow fadeInUp">
+    <div class="row section-heading-wrapper">
+      <div class="col-md-12 col-sm-12">
+        <h2 class="section-heading text-center">Research Studies</h2>
+        {{ with $.Site.GetPage "page" "research-studies.md" }}
+        {{ .Content }}
+        {{  end }}
+      </div> <!-- end .col-sm-10  -->
+    </div> <!-- end .row  -->
+    <div class="row">
+      {{ range ( where site.RegularPages "Section" "research-studies" | first 4 ) }}
+      <div class="col-md-6 col-sm-6">
+        <div class="cause-wrapper">
+          <div class="col-sm-12 no-padding">
+            <figure class="cause-img">
+              {{ with .Params.featured_image }}
+              <img src="{{ . }}" alt="{{ with $.Page.Params.title }}{{ . }}{{ end }}" />
+              {{ end }}
+            </figure> <!-- end .cause-img  -->
+          </div> <!-- end .col-sm-12  -->
+          <div class="col-sm-12 no-padding">
+            <div class="cause-content">       
+              <div class="cause-text">
+                <h5><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
+                <p>{{ .Summary }}</p>
+              </div> <!--  end .cause-text  -->
+              <div class="cause-link clearfix">
+                <a class="btn btn-default cause-button1" href="{{ .RelPermalink }}">Learn More</a>
+              </div>
+            </div> <!-- end .cause-content  -->
+          </div> <!-- end .col-sm-12  -->
+        </div>
+      </div> <!-- end .col-md-6  -->
+      {{ end }}
+    </div> <!-- end .row  -->
+  </div> <!-- end .container  -->
+</section> <!-- end .cause-section  -->

@@ -1,0 +1,162 @@
+{{ define "main" }}
+
+ <!--  HOME BANNER  -->
+<section class="section-banner">
+  <div class="container wow fadeInUp">
+    <div class="row">
+      <div class="col-md-8 col-sm-8">
+        <h3 class="banner-subheading">
+          <span>Be mindful of cellphone usage</span>
+        </h3>         
+        <h2 class="banner-heading text-shadow">Dangerous Waves?</h2>
+        <a class="btn btn-default about-us-button learn-more-btn" href="5g-radiation.html">Learn More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--  WHAT IS 5G?  -->
+<section class="section-content-block who-are-we">
+  <div class="container">   
+    <div class="row">
+      <div class="about-us">        
+        <div class="col-md-6 col-sm-12">  
+          <div class="about-us-text">
+            <h2 class="section-heading-inline">What is 5G?</h2>
+            {{ with $.Site.GetPage "page" "what-is-5g.md" }}
+            {{  .Content }}
+            {{  end }}
+            <a class="btn btn-default about-us-button" href="5g-radiation.html">Learn More</a>
+            </div> <!--  end .About-text  -->
+          </div>
+          <div class="col-md-6 col-sm-12 hidden-xs">  
+          <figure class="about-us-img">
+              <img src="images/about_us.jpg" alt="About_image" />               
+          </figure> <!-- end .About-img  -->
+        </div>             
+      </div> <!-- end .about action -->
+    </div>
+  </div> <!-- end .container  -->
+</section> <!-- end .about-section-  -->
+
+{{- partial "recent-research-studies.html" . -}}
+
+<!-- HOME WHAT IS 5G? -->
+<section class="section-content-block section-our-team section-pure-white-bg">
+  <div class="container wow fadeInUp">
+      <div class="row section-heading-wrapper">
+          <div class="col-md-12 col-sm-12 text-center">
+              <h2 class="section-heading section-heading">Experts in the Field</h2>
+              <p>These known individuals contribute great research in the field of cellphone radiation and 5G.</p>
+          </div> <!-- end .col-sm-10  -->
+      </div> <!-- end .row  -->
+      <div class="row">
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="team-layout-3 text-center xs-margin">       
+            <figure class="team-member-3">
+              <a href="#" title="Melissa Munoz">
+                  <img src="images/team_6.jpg" alt="" />
+              </a>
+            </figure> <!-- end. team-member  -->
+            <h3>ALEXANDER GARY</h3>                               
+            <h4>5G Expert</h4> 
+            <div class="team-social-share-3 clearfix">
+                <a class="fa fa-facebook rectangle" href="#" title="Facebook"></a>
+                <a class="fa fa-twitter rectangle" href="#" title="Twitter"></a>
+                <a class="fa fa-google-plus rectangle" href="#" title="Google Plus"></a>
+                <a class="fa fa-linkedin rectangle" href="#" title="Linkedin"></a>
+            </div> <!-- end .author-social-box  -->
+          </div> <!--  end articles -->
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="team-layout-3 text-center xs-margin">       
+            <figure class="team-member-3">
+              <a href="#" title="Melissa Munoz">
+                  <img src="images/team_7.jpg" alt="" />
+              </a>
+            </figure> <!-- end. team-member  -->
+            <h3>MELISSA MUNOZ</h3>                                   
+            <h4>5G Expert</h4> 
+            <div class="team-social-share-3 clearfix">
+              <a class="fa fa-facebook rectangle" href="#" title="Facebook"></a>
+              <a class="fa fa-twitter rectangle" href="#" title="Twitter"></a>
+              <a class="fa fa-google-plus rectangle" href="#" title="Google Plus"></a>
+              <a class="fa fa-linkedin rectangle" href="#" title="Linkedin"></a>
+            </div> <!-- end .author-social-box  -->
+          </div> <!--  end articles -->
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="team-layout-3 text-center xs-margin">       
+            <figure class="team-member-3">
+              <a href="#" title="Melissa Munoz">
+                  <img src="images/team_8.jpg" alt="" />
+              </a>
+            </figure> <!-- end. team-member  -->
+            <h3>JOHN ABRAHAM</h3>                                   
+            <h4>5G Expert</h4> 
+            <div class="team-social-share-3 clearfix">
+              <a class="fa fa-facebook rectangle" href="#" title="Facebook"></a>
+              <a class="fa fa-twitter rectangle" href="#" title="Twitter"></a>
+              <a class="fa fa-google-plus rectangle" href="#" title="Google Plus"></a>
+              <a class="fa fa-linkedin rectangle" href="#" title="Linkedin"></a>
+            </div> <!-- end .author-social-box  -->
+          </div> <!--  end articles -->
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+          <div class="team-layout-3 text-center xs-margin">       
+            <figure class="team-member-3">
+              <a href="#" title="Melissa Munoz">
+                  <img src="images/team_9.jpg" alt="" />
+              </a>
+            </figure> <!-- end. team-member  -->
+            <h3>SILVIA STAN</h3>                                   
+            <h4>5G Expert</h4> 
+            <div class="team-social-share-3 clearfix">
+                <a class="fa fa-facebook rectangle" href="#" title="Facebook"></a>
+                <a class="fa fa-twitter rectangle" href="#" title="Twitter"></a>
+                <a class="fa fa-google-plus rectangle" href="#" title="Google Plus"></a>
+                <a class="fa fa-linkedin rectangle" href="#" title="Linkedin"></a>
+            </div> <!-- end .author-social-box  -->
+          </div> <!--  end articles -->
+        </div>          
+      </div> <!-- end .row  -->
+    </div> <!-- end .container  -->
+  </section> <!--  end .section-our-team -->
+  
+{{- partial "call-to-action/donate.html" . -}}
+
+  <!-- CLIENT LOGO SECTION  -->
+
+  <section class="section-content-block section-client-logo">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12 col-sm-12 text-center">
+          <h2 class="section-heading"><span>Our</span> Donors</h2>
+          <p class="section-subheading">
+              YOU CAN JOIN WITH US BY DONATION AND ENCOURAGE PEOPLE TO AVOID USING 5G.
+          </p>
+        </div> <!-- end .col-sm-10  -->
+      </div> <!--  end .row  -->
+      <div class="row">
+        <div class="logo-items logo-layout-1 text-center">
+          <div class="logo">
+            <img src="images/logo_1.png" alt="" />
+          </div>
+          <div class="logo">
+            <img src="images/logo_2.png" alt="" />
+          </div>
+          <div class="logo">
+            <img src="images/logo_3.png" alt="" />
+          </div>
+          <div class="logo">
+            <img src="images/logo_4.png" alt="" />
+          </div>
+          <div class="logo">
+            <img src="images/logo_5.png" alt="" />
+          </div>
+        </div> <!-- end .testimonial-container  -->
+      </div> <!-- end row  -->
+    </div> <!-- end .container  -->
+  </section> <!--  end .section-client-logo -->   
+
+{{ end }}

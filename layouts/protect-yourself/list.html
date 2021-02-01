@@ -1,0 +1,75 @@
+{{ define "main" }}
+
+<!--  PAGE HEADING -->
+
+<section class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h3>Protect Yourself</h3>
+      </div>
+    </div> <!-- end .row  -->
+  </div> <!-- end .container  -->
+</section> <!-- end .page-header  -->
+
+<!--  TAKE ACTION SECTION  -->
+
+<section class="section-content-block take-section section-secondary-bg">
+  {{ range .Paginator.Pages }}
+  <div class="container">     
+    <div class="row">
+      <div class="take-action">   
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">    
+          <div class="action-text">
+            <h2 class="section-heading-inline">{{ .Title }}</h2>
+            <p>{{ .Summary }}</p>
+            <a class="btn btn-default action-button" href="{{ .RelPermalink }}">Take Action</a>                             
+          </div> <!--  end .Action-text  -->
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">    
+          <figure class="action-img">
+              {{ with .Params.featured_image }}
+              <img src="{{ . }}" alt="{{ with $.Page.Params.title }}{{ . }}{{ end }}" />
+              {{ end }}
+              <a class="video-play-icon" href="{{ .RelPermalink }}">
+                <i class="fa fa-caret-right"></i>
+              </a>                                
+          </figure> <!-- end .action-img  -->
+          <div class="action-overlay-bg"></div>
+        </div>
+      </div> <!-- end .take-action -->
+    </div>
+  </div> <!-- end .container  -->
+  {{ end }}
+  <div class="blog-pagination text-center clearfix">  
+    {{ $pag := $.Paginator }}
+    {{ if gt $pag.TotalPages 1 }}              
+    <ul class="pagination">
+      {{ $pag := $.Paginator }}
+      {{ if gt $pag.TotalPages 1 }}
+      {{ $.Scratch.Set "dot_rendered" false }}
+        {{ if $pag.HasPrev  }}
+        <li><a href="{{ $pag.Prev.URL }}" class="prev page-numbers"><i class="fa fa-caret-left"></i></a></li>
+        {{ end }}
+
+        {{ range $pag.Pagers }}
+          {{ if eq . $pag }} <!-- Current Page -->
+          <li class="active"><a href="#" class="page-numbers">{{ .PageNumber }}</a></li>
+          {{ else if and (ge .PageNumber (sub $pag.PageNumber 2)) (le .PageNumber (add $pag.PageNumber 2)) }}
+          {{ $.Scratch.Set "dot_rendered" false }} <!-- Render prev 2 page and next 2 pages -->
+          <li><a href="{{ .URL }}" class="page-numbers current">{{ .PageNumber }}</a></li>
+          {{ else if eq ($.Scratch.Get "dot_rendered") false }} <!-- render skip pages -->
+          {{ $.Scratch.Set "dot_rendered" true }}
+          <li class="disabled"><a class="page-numbers">...</a></li>
+          {{ end }}
+        {{ end }}
+
+        {{ if $pag.HasNext }}
+        <li><a href="{{ $pag.Next.URL }}" class="next page-numbers"><i class="fa fa-caret-right"></i></a></li>
+        {{ end }}
+      {{ end }}
+    </ul> <!-- end pagination  -->
+    {{ end }}
+  </div> <!--  end blog-pagination -->
+</section> <!-- end .take-action  -->
+{{ end }}     

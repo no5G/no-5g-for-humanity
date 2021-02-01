@@ -1,0 +1,40 @@
+ <!-- RESEARCH STUDIES SNIPPETS  -->
+
+<section class="section-content-block section-secondary">
+ <div class="container wow fadeInUp">
+    <div class="row section-heading-wrapper">
+      <div class="col-md-12 col-sm-12 text-center">
+        <h2 class="section-heading">Research Studies</h2>
+        <p class="section-subheading">How scientists are discovering 5G.</p>
+      </div> <!-- end .col-sm-10  -->
+    </div> <!--  end .row  -->
+    <div class="row">
+      {{ range ( where site.RegularPages "Section" "research-studies" | first 3 ) }}
+      <div class="col-md-4 col-sm-6 col-xs-12 margin-bottom-40">
+        <div class="success-story xs-margin">
+          <div class="success-story-thumbnail">
+              <a href="#">
+                {{ with .Params.featured_image }}
+                <img src="{{ . }}" alt="{{ with $.Page.Params.title }}{{ . }}{{ end }}" />
+                {{ end }}
+              </a>
+          </div>
+          <div class="success-details">
+            <a class="success-date">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</a>
+            <h4 class="success-story-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h4>                            
+            <p>{{ .Summary }}</p>
+            <a class="success-link" href="{{ .RelPermalink }}">Read More</a>
+          </div>
+        </div> <!-- end .success-details  -->
+      </div> <!-- end .col-md-4  -->
+      {{ end }}
+    </div> <!--  end .row  -->
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-md-offset-4 text-center">
+        <a class="btn btn-load-more" href="/research-studies">All Research Studies</a>
+      </div>
+    </div> <!--  end .row  -->
+  </div>
+</section>  <!--  end .success section -->

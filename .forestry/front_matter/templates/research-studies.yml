@@ -1,0 +1,27 @@
+---
+label: Research Studies
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: featured_image
+  label: featured_image
+- type: list
+  name: categories
+  label: categories
+- type: list
+  name: tags
+  label: tags
+pages:
+- content/protect-yourself/protect-1.md
+- content/protect-yourself/protect-2.md
+- content/protect-yourself/protect-3.md
+- content/protect-yourself/protect-4.md
+- content/research-studies/research-study-1.md
+- content/research-studies/research-study-3.md
+- content/research-studies/research-study-4.md

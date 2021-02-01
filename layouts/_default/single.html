@@ -1,0 +1,202 @@
+{{ define "main" }}
+
+<section class="page-header" data-stellar-background-ratio="0.1">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h3>{{ .Title }}</h3>
+      </div>
+    </div> <!-- end .row  -->
+  </div> <!-- end .container  -->
+</section> <!-- end .page-header  -->
+<section class="section-content-block">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-12">
+        <article class="post single-post-inner">
+          <div class="post-inner-featured-content">
+            {{ with .Params.featured_image }}
+            <img src="{{ . }}" alt="{{ with $.Page.Params.title }}{{ . }}{{ end }}">
+            {{ end }}
+          </div>
+          <div class="single-post-inner-title">
+            <h2>{{ .Title }}</h2>
+            <p class="single-post-meta">
+            {{ if .Site.Params.author }}
+            <i class="fa fa-user"></i>&nbsp; {{ .Site.Params.author }} &nbsp; &nbsp;
+            {{ end }}
+            <i class="fa fa-share"></i>
+            {{ if .Params.categories }}
+            {{ range .Params.categories }}
+            &nbsp;<a title="{{ . }} " href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}, </a>
+            {{ end }}
+            {{ end }}
+            <i class="fa fa-calendar"></i>
+            &nbsp;{{ dateFormat "Monday, Jan 2, 2006" .Date }}
+            </p>
+          </div>
+          <div class="single-post-inner-content">
+            {{ .Content }}
+          </div>
+          {{ if .Params.tags }}
+          <div class="single-post-inner-meta">
+            <h2><i class="fa fa-tags"></i> Tags</h2>
+            <div class="tag-list">
+              {{ range .Params.tags }}
+              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+              {{ end }}
+            </div>
+          </div>
+          {{ end }}
+        </article> <!--  end single-post-container -->
+        {{ if .Site.Params.author }}
+        <div class="article-author clearfix">
+          <div class="topic-bold-header clearfix">
+            <h4>Article by {{ .Site.Params.author }}</h4>
+          </div> <!-- end .topic-bold-header  -->
+          <!-- <figure class="author-avatar">
+              <a href="">
+                  <img src="/images/user_1.jpg" alt="Avatar">
+              </a>
+          </figure> -->
+          <div class="about_author">
+              {{ .Site.Params.authorbio }}
+          </div>
+          <div class="social-icons margin-top-11 clearfix">
+              <a class="fa fa-facebook social_icons" href="#" data-original-title="Facebook"></a>
+              <a class="fa fa-twitter social_icons" href="https://twitter.com/#" data-original-title="Twitter"></a>
+              <a class="fa fa-flickr social_icons" href="http://www.flickr.com/photos/#" data-original-title="Flickr"></a>
+              <a class="fa fa-youtube social_icons" href="http://www.youtube.com/#" data-original-title="Youtube"></a>
+              <a class="fa fa-linkedin social_icons" href="#" data-original-title="Linkedin"></a>
+          </div>
+        </div> <!-- end .article-author  -->
+
+        <div class="post-nav-section clearfix">
+          {{ if .NextInSection }}
+          <a class="btn btn-primary fr" href="{{.NextInSection.Permalink}}">Next Post <i class="fa fa-angle-double-right"></i></a>
+          {{ end }}
+          {{ if .PrevInSection }}
+          <a class="btn btn-primary" href="{{.PrevInSection.Permalink}}"><i class="fa fa-angle-double-left"></i> Previous Post</a>
+          {{ end }}
+        </div>
+
+        {{ end }}
+        <!-- <div class="related-post">
+          <div class="topic-bold-header clearfix">
+            <h4>Related Posts</h4>
+          </div>
+          <ul>
+            <li><a href="#">- Make Kalam's House A Knowledge Centre</a></li>
+            <li><a href="#">- TRAI Pledges to Protect Net Neutrality </a></li>
+            <li><a href="#">-  Improve Safety Measures For Women Passengers</a></li>
+          </ul>
+        </div> --> <!-- end .related-post  -->
+
+        <!-- <div class="comments-area" id="comments">
+            <a href="#respond" class="article-add-comments"><i class="fa fa-plus"></i></a>         
+            <div class="topic-bold-header clearfix">
+              <h4>4 comments to this article</h4>
+            </div>
+            <ol class="commentslist">
+              <li>
+              <article class="clearfix">
+                <header>
+                  <h5><a href="">Mahbub Alam Khan</a></h5>
+                  <p><span>on jan 19th, 2013 at 3:05 Pm - </span><a href="">Reply</a></p>
+                </header>
+                <figure class="comment-avatar">
+                  <a href="">
+                      <img src="/images/user_1.jpg" alt="Avatar">
+                  </a>
+                </figure>
+                <p class="waiting-moderation">
+                  Your comment is awaiting for moderation.
+                </p>
+                <div class="comment_text">
+                  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                  Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="clearfix">
+                <header>
+                  <h5><span>ADMIN</span><a href="">Mahbub Alam Khan</a></h5>
+                  <p><span>on jan 19th, 2013 at 3:05 Pm - </span><a href="">Reply</a></p>
+                </header>
+                <figure class="comment-avatar">
+                  <a href="">
+                      <img src="/images/user_2.jpg" alt="Avatar">
+                  </a>
+                </figure>
+                <p class="waiting-moderation">
+                  Your comment is awaiting for moderation.
+                </p>
+                <div class="comment_text">
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                </div>
+              </article>
+              <ol>
+                <li>
+                  <article class="clearfix">
+                    <header>
+                      <h5>Mahbub Alam Khan</h5>
+                      <p><span>on jan 19th, 2013 at 3:05 Pm - </span><a href="">Reply</a></p>
+                    </header>
+                    <figure class="comment-avatar">
+                      <a href="">
+                        <img src="/images/user_3.jpg" alt="Avatar">
+                      </a>
+                    </figure>
+                    <div class="comment_text">
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. 
+                    </div>
+                  </article>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div> --> <!-- end comments-area-->
+
+      </div> <!--  end .single-post-container -->
+      <div class="col-md-4 col-sm-12">           
+        <div class="widget site-sidebar">
+          <h2 class="widget-title">Categories</h2>
+          <ul class="widget-post-category clearfix">
+            {{ if .Params.categories }}
+            {{ range .Params.categories }}
+            <li>
+              <a title="{{ . }}" href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+              <!-- <span class="pull-right badge">42</span> -->
+            </li>
+            {{ end }}
+            {{ end }}
+          </ul>
+        </div> <!--  end .widget -->
+        <!-- <div class="widget site-sidebar">
+          <h2 class="widget-title">Recent Posts</h2>
+          <div class="single-recent-post">
+              <img alt="" class="single-post-thumb" src="/images/gallery_6.jpg">
+              <a href="#">Zomato Commits to Making Food Delivery Safer </a>
+              <span><i class="fa fa-calendar icon-color"></i>&nbsp;January 19, 2016</span>
+          </div>
+        </div> -->
+        {{ if .Params.tags }}
+        <div class="widget site-sidebar">
+          <h2 class="widget-title">Tags</h2>
+          <ul class="widget-recent-tags clearfix">
+            {{ range .Params.tags }}
+            <li>
+              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" title="{{ . }}"> {{ . }}</a> 
+            </li>
+            {{ end }}
+          </ul><!--  end .widget-recent-tags -->
+        </div> <!--  end .widget -->
+        {{ end }}
+      </div> <!-- end .col-sm-4  -->
+    </div> <!--  end row  -->
+  </div> <!--  end container -->
+</section> <!-- end .section-content-block  -->
+{{ end }}
