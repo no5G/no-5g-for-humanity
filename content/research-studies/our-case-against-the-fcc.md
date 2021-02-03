@@ -1,7 +1,6 @@
 +++
 categories = ["FCC"]
 date = 2021-02-03T05:00:00Z
-draft = true
 featured_image = "/images/our-case-against-the-fcc.jpg"
 tags = ["FCC"]
 title = "Our Case Against the FCC"
