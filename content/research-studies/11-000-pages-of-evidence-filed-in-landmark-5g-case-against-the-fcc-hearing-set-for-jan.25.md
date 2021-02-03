@@ -1,6 +1,6 @@
 +++
 categories = ["Evidence", "FCC"]
-date = 2021-02-03T05:00:00Z
+date = 2021-02-03T18:00:00Z
 featured_image = "/images/5g-fcc-lawsuit-feature-1-800x417.jpg"
 tags = ["Evidence", "FCC"]
 title = "11,000 Pages of Evidence Filed in Landmark 5G Case Against the FCC, Hearing Set for Jan. 25"
