@@ -7,7 +7,7 @@ categories:
 tags:
 - Ex Industry Leader
 - Corona Virus
-featured_image: "/images/volunteer_group.jpg"
+featured_image: "/images/5g-cell-tower.jpg"
 author: Richard
 
 ---
