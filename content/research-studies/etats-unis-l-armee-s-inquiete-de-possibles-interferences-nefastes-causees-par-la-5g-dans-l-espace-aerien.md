@@ -1,6 +1,6 @@
 +++
 categories = ["United States"]
-date = 2021-02-03T05:00:00Z
+date = 2021-02-03T20:00:00Z
 featured_image = "/images/5g-technology.jpg"
 tags = ["United States"]
 title = "États-Unis : l’armée s’inquiète de possibles interférences néfastes causées par la 5G dans l’espace aérien"
