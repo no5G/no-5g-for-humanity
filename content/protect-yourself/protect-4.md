@@ -1,12 +1,8 @@
 ---
 title: Protect 4
 date: 2021-01-31T14:23:06.000-05:00
-categories:
-- computers
-- entrepreneurship
-tags:
-- computers
-- entrepreneurship
+categories: []
+tags: []
 featured_image: "/images/action_1.jpg"
 author: Richard
 
