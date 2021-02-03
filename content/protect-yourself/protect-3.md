@@ -1,12 +1,8 @@
 ---
 title: Protect 3
 date: 2021-01-30T19:35:25.000-05:00
-categories:
-- computers
-- entrepreneurship
-tags:
-- computers
-- entrepreneurship
+categories: []
+tags: []
 featured_image: "/images/action_1.jpg"
 author: Richard
 
