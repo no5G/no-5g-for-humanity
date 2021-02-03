@@ -1,6 +1,6 @@
 ---
 title: Ex Industry Leader Explains Link Between 5G and Corona Virus
-date: 2021-02-03T19:11:16+00:00
+date: 2021-02-02T19:11:16+00:00
 categories:
 - Ex Industry Leader
 - Corona Virus
