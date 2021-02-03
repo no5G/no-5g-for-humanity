@@ -1,5 +1,5 @@
 ---
-title: Industry Leader Explains Link Between 5G and Corona Virus
+title: Ex Industry Leader Explains Link Between 5G and Corona Virus
 date: 2021-02-03T19:11:16+00:00
 categories:
 - Ex Industry Leader
@@ -7,7 +7,7 @@ categories:
 tags:
 - Ex Industry Leader
 - Corona Virus
-featured_image: "/images/5g-cell-tower.jpg"
+featured_image: "/images/volunteer_group.jpg"
 author: Richard
 
 ---
