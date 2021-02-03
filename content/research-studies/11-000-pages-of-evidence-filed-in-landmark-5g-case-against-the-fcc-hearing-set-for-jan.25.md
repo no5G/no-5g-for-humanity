@@ -20,7 +20,7 @@ A [landmark case](https://childrenshealthdefense.org/wp-content/uploads/Correcte
 
 Recently, the leading environmental and health advocacy organizations that filed the case submitted 11,000 pages of evidence in support of their claims. (Links to the evidence are provided below).
 
-The case is being heard by the U.S. Courts of Appeals of the DC Circuit. Oral arguments are scheduled for [Jan. 25](https://l.facebook.com/l.php?u=https%3A%2F%2Fchildrenshealthdefense.org%2Fdefender%2Fchd-day-in-court-case-against-fcc%2F%3Futm_source%3Dsalsa%26eType%3DEmailBlastContent%26eId%3D0cb081a7-64ba-4eeb-97b2-a70486bd965b%26fbclid%3DIwAR2Dp2uZ8g0xlJv5XVzh1mTSRAdu4eQTMwWlSJJiNwovMDl9wYv6UL1eakY&h=AT1xfrb2XpJVVu1Pb_cp2wHYHVBaT8mVY5aAYQvjg1Q1aNMIE7vWjqfJvLYgMGD__j6qDCz11qrMiH0O-IL28dm4C80DictdqTgUnbSnBTjmSTT9lVuHK5lfzG6oCkn3_WT6eAMp5weK4TD2rOk&__tn__=H-R&c\[0\]=AT0HQKuzJJ5H6pXfFbfmJjfHm7GT5jeWojvLB--daWitb8cjkS_keYqXrDtUIlqCFvMshpKPVyt4zPYJQeLNdJ2MMTpD9U57LAOGp405c-2hV1PdBr0KcBixJJ95AiMU72JgY0KJeoczpVTKbZaIbULqDg) at 9:30 a.m. EST. The public can listen to it on [YouTube](https://www.youtube.com/c/USCourtsCADC/featured).
+The case is being heard by the U.S. Courts of Appeals of the DC Circuit. Oral arguments are scheduled for [Jan. 25](https://l.facebook.com/l.php?u=https%3A%2F%2Fchildrenshealthdefense.org%2Fdefender%2Fchd-day-in-court-case-against-fcc%2F%3Futm_source%3Dsalsa%26eType%3DEmailBlastContent%26eId%3D0cb081a7-64ba-4eeb-97b2-a70486bd965b%26fbclid%3DIwAR2Dp2uZ8g0xlJv5XVzh1mTSRAdu4eQTMwWlSJJiNwovMDl9wYv6UL1eakY&h=AT1xfrb2XpJVVu1Pb_cp2wHYHVBaT8mVY5aAYQvjg1Q1aNMIE7vWjqfJvLYgMGD__j6qDCz11qrMiH0O-IL28dm4C80DictdqTgUnbSnBTjmSTT9lVuHK5lfzG6oCkn3_WT6eAMp5weK4TD2rOk&__tn__=H-R&c%5B0%5D=AT0HQKuzJJ5H6pXfFbfmJjfHm7GT5jeWojvLB--daWitb8cjkS_keYqXrDtUIlqCFvMshpKPVyt4zPYJQeLNdJ2MMTpD9U57LAOGp405c-2hV1PdBr0KcBixJJ95AiMU72JgY0KJeoczpVTKbZaIbULqDg) at 9:30 a.m. EST. The public can listen to it on [YouTube](https://www.youtube.com/c/USCourtsCADC/featured).
 
 In December 2019, the [FCC closed an inquiry](https://docs.fcc.gov/public/attachments/FCC-19-126A1.pdf) it initiated in 2013 in which the commission asked the public to submit comments to the [inquiry’s docket](https://www.fcc.gov/ecfs/search/filings?proceedings_name=13-84&sort=date_disseminated,DESC) as to whether or not the FCC should review its 1996 health guidelines for Radio Frequency (RF) radiation emitted by wireless devices and infrastructure.
 
@@ -34,8 +34,8 @@ CHD’s case was also joined by [physicians](https://childrenshealthdefense.org/
 
 The petitioners of both the EHT and CHD cases filed joint briefs. They argued that, considering the overwhelming evidence that was submitted to the FCC’s docket, and since the FCC’s order lacked evidence of reasoned decision-making, the FCC violated the [Administrative Procedures Act](https://childrenshealthdefense.org/press-release/response-brief-filed-in-landmark-case-against-fcc-on-5g-and-wireless-health-impacts/) and that the commission’s decision is capricious, arbitrary, abuse of discretion and not evidence-based.
 
-The petitioners also argued that the FCC violated the National Environmental Policy Act (NEPA) because the Agency failed to consider the environmental impacts of its decision, and didn’t comply with the 1996 Telecommunications Act (TCA) because it failed to consider the impact of its decision on public health andsafety.  
-  
+The petitioners also argued that the FCC violated the National Environmental Policy Act (NEPA) because the Agency failed to consider the environmental impacts of its decision, and didn’t comply with the 1996 Telecommunications Act (TCA) because it failed to consider the impact of its decision on public health andsafety.
+
 The [Opening Brief](https://childrenshealthdefense.org/wp-content/uploads/Corrected-Brief-and-Hyperlinks-Table-Postable-pdf-A1.pdf) was filed by petitioners on July 29, 2020. The [FCC filed its brief](https://childrenshealthdefense.org/wp-content/uploads/fcc-response-brief-9-22-20.pdf) on Sept. 22, 2020; and the petitioners filed their [Reply Brief](https://childrenshealthdefense.org/wp-content/uploads/pacer-joint-reply-brief-10-19-20.pdf) on Oct. 21, 2020.
 
 The court has ordered that in the oral arguments scheduled for Jan. 25, only one attorney will present the case for all the petitioners. It allocated 10 minutes for oral arguments for the petitioners as well as for the FCC.
@@ -62,8 +62,8 @@ Unlike industry statements, both the majority of the studies and the weight of t
 
 The Joint Appendix also includes reports of leading expert scientists such as the BioInitiative Report; opinions of medical associations such as the California Medical Association and the American Academy of Pediatrics; appeals of leading expert scientists; U.S. government agencies’ reports (U.S. Access Board, NIBS, the Department of Interior, U.S. Navy, the Military, U.S. Environmental Protection Agency; government studies including the recent National Toxicology Program (NTP), a [$30 million study](https://ntp.niehs.nih.gov/whatwestudy/topics/cellphones/index.html) that found clear evidence of cancer and DNA damage; as well as acknowledgement of harm by U.S. government agencies and scientists contradicting the FCC position.
 
-In December 2020, the National Academy of Sciences, Engineering and Medicine (NAS) issued [a report ](https://childrenshealthdefense.org/defender/havana-syndrome-more-research-health-impact-5g/)determining that the most likely cause of the symptoms suffered by the U.S. diplomats in Cuba and China is Radio-Frequency (wireless) weapons. The NAS was appointed by the Department of State. The report references much of the same evidence filed in the case against theFCC.  
-  
+In December 2020, the National Academy of Sciences, Engineering and Medicine (NAS) issued [a report ](https://childrenshealthdefense.org/defender/havana-syndrome-more-research-health-impact-5g/)determining that the most likely cause of the symptoms suffered by the U.S. diplomats in Cuba and China is Radio-Frequency (wireless) weapons. The NAS was appointed by the Department of State. The report references much of the same evidence filed in the case against theFCC.
+
 The NAS invited Prof. Beatrice Golomb, M.D., Ph.D., to present to the committee. [Golomb’s 2018 paper](https://static1.squarespace.com/static/58fa27103e00bed09c8eac2c/t/5b7f95930e2e7262c9be0455/1535088022263/Cuba+2018-08-23c+-NEJM.pdf) was the first to show that pulsed RF is the most likely explanation for the diplomats’ symptoms. She pointed out the diplomats likely suffer from the same condition experienced by growing segments of the population from wireless technology known as radiation sickness/ microwave sickness/ electrosensitivity. Golomb’s paper was referenced in the case.
 
 Hundreds of testimonials of people who have become sick like the diplomats and statements of doctors were filed to the FCC’s docket. The petitioners argued that the FCC guidelines that deny sickness are being used to deny accommodation for the injured, in violation of the Americans with Disabilities Act.
@@ -93,3 +93,11 @@ The [oral arguments](https://childrenshealthdefense.org/defender/chd-day-in-cour
 [Volume 21](https://childrenshealthdefense.org/wp-content/uploads/Volume-21.pdf); [Volume 22](https://childrenshealthdefense.org/wp-content/uploads/Volume-22.pdf); [Volume 23](https://childrenshealthdefense.org/wp-content/uploads/Volume-23.pdf); [Volume 24](https://childrenshealthdefense.org/wp-content/uploads/Volume-24.pdf)
 
 [Volume 25](https://childrenshealthdefense.org/wp-content/uploads/Volume-25.pdf); [Volume 26](https://childrenshealthdefense.org/wp-content/uploads/Volume-26.pdf); [Volume 27](https://childrenshealthdefense.org/wp-content/uploads/Volume-27.pdf)
+
+##### How to access the oral arguments online
+
+The oral arguments are Jan. 25 9:30 a.m. EST, however according to the schedule, 2 other cases are scheduled for the same time and they will be heard ahead of our case. Hence, most likely, our oral arguments will not start before 10:20 a.m. EST.
+
+You can [listen to the hearing here](https://www.youtube.com/c/USCourtsCADC/featured).
+
+[http://bit.ly/EHTvFCChearing](http://bit.ly/EHTvFCChearing "http://bit.ly/EHTvFCChearing")
