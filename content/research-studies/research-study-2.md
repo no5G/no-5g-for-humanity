@@ -1,7 +1,7 @@
 ---
 title: 'États-Unis : l’armée s’inquiète de possibles interférences néfastes causées
   par la 5G dans l’espace aérien'
-date: 2020-05-10T11:48:47.000-04:00
+date: 2021-02-03T16:48:47+00:00
 categories: []
 tags: []
 featured_image: "/images/5g-technology.jpg"
