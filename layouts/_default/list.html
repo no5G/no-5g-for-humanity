@@ -17,7 +17,7 @@
         {{ range .Paginator.Pages }}
         <article class="post single-post">
           <div class="single-post-content">
-            <a title="" href="single-study.html">
+            <a title="" href="{{ .RelPermalink }}">
               {{ with .Params.featured_image }}
               <img src="{{ . }}" alt="{{ with $.Page.Params.title }}{{ . }}{{ end }}">
               {{ end }}
