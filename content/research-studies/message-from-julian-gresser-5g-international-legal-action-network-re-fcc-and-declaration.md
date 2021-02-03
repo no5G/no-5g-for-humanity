@@ -1,6 +1,6 @@
 +++
 categories = ["Legal Action", "International"]
-date = 2021-02-03T05:00:00Z
+date = 2021-02-03T21:00:00Z
 featured_image = "/images/image001.jpg"
 tags = ["Legal Action", "International"]
 title = "Message from Julian Gresser, 5G-International Legal Action Network re FCC and Declaration"
