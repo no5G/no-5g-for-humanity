@@ -1,6 +1,6 @@
 +++
 categories = ["5G Wireless Safety"]
-date = 2021-02-03T05:00:00Z
+date = 2021-02-03T19:00:00Z
 featured_image = "/images/5g-technology.jpg"
 tags = ["5G Wireless Safety"]
 title = "DC Circ. Picks Apart FCC Over 5G Wireless Safety Review"
