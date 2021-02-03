@@ -14,3 +14,5 @@ author: Richard
 [Ex Industry Leader Explains Link Between 5G and Corona Virus](https://lbry.tv/@MagicalHoof:b/Former-Vodaphone-Boss-Blows-Whistle-On-5G--amp--COVID-19----RE-UPLOAD,-POSTED-OVER-6-MONTHS-AGO-:6 "Ex Industry Leader Explains Link Between 5G and Corona Virus")
 
 Former Vodaphone Boss Blows Whistle On 5G & COVID-19 - \[RE-UPLOAD, POSTED OVER 6 MONTHS AGO\]
+
+{{< youtube 2bWCGCZPGmI >}}
