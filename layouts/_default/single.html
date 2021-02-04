@@ -50,15 +50,15 @@
           {{ end }}
         </article> <!--  end single-post-container -->
         {{ if .Site.Params.author }}
-        <div class="article-author clearfix">
+        <!-- <div class="article-author clearfix">
           <div class="topic-bold-header clearfix">
             <h4>Article by {{ .Site.Params.author }}</h4>
-          </div> <!-- end .topic-bold-header  -->
-          <!-- <figure class="author-avatar">
+          </div>
+          <figure class="author-avatar">
               <a href="">
                   <img src="/images/user_1.jpg" alt="Avatar">
               </a>
-          </figure> -->
+          </figure>
           <div class="about_author">
               {{ .Site.Params.authorbio }}
           </div>
@@ -69,7 +69,7 @@
               <a class="fa fa-youtube social_icons" href="http://www.youtube.com/#" data-original-title="Youtube"></a>
               <a class="fa fa-linkedin social_icons" href="#" data-original-title="Linkedin"></a>
           </div>
-        </div> <!-- end .article-author  -->
+        </div>-->
 
         <div class="post-nav-section clearfix">
           {{ if .NextInSection }}
@@ -161,20 +161,20 @@
         </div> --> <!-- end comments-area-->
 
       </div> <!--  end .single-post-container -->
-      <div class="col-md-4 col-sm-12">           
+      <div class="col-md-4 col-sm-12">  
+        {{ if .Params.categories }}         
         <div class="widget site-sidebar">
           <h2 class="widget-title">Categories</h2>
           <ul class="widget-post-category clearfix">
-            {{ if .Params.categories }}
             {{ range .Params.categories }}
             <li>
               <a title="{{ . }}" href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
               <!-- <span class="pull-right badge">42</span> -->
             </li>
             {{ end }}
-            {{ end }}
           </ul>
         </div> <!--  end .widget -->
+        {{ end }}
         <!-- <div class="widget site-sidebar">
           <h2 class="widget-title">Recent Posts</h2>
           <div class="single-recent-post">

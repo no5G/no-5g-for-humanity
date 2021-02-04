@@ -33,14 +33,16 @@
               &nbsp;{{ .Params.Author }}
               {{ end }}
 
-              &nbsp;<i class="fa fa-book"></i>
               {{ if .Params.categories }}
+              &nbsp;<i class="fa fa-book"></i>
               {{ range .Params.categories }}
               &nbsp;<a title="View all posts in  Environment Right " href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}, </a>
               {{ end }}
               {{ end }}
+              {{ if .Params.date }}
               &nbsp;<i class="fa fa-calendar"></i>
               &nbsp;{{ dateFormat "Monday, Jan 2, 2006" .Date }}
+              {{ end }}
             </p>
             <p>{{ .Summary }}</p>
             <p class="text-left">

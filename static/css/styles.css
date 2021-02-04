@@ -231,7 +231,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #426f12;
+  color: #eb893d;
   text-decoration: none;
 }
 blockquote {
@@ -378,7 +378,7 @@ strong {
 }
 #backTop.custom:hover {
   background-color: #ffffff;
-  border: 0px solid #426f12;
+  border: 0px solid #eb893d;
 }
 .text-bold {
   font-weight: 800;
@@ -1455,8 +1455,8 @@ header.one-page .navbar-nav > li > a span {
 }
 .take-section .take-action .action-text h2 {
   margin-top: 12px;
-  text-transform: uppercase;
-  font-size: 40px;
+  text-transform: inherit;
+  font-size: 32px;
   line-height: 36px;
   margin-bottom: 16px;
 }
@@ -1906,7 +1906,7 @@ header.one-page .navbar-nav > li > a span {
   line-height: 36px;
   margin-top: 8px;
   margin-bottom: 8px;
-  text-transform: uppercase;
+  text-transform: inherit;
 }
 .success-story .success-details .success-story-title a {
   color: #333333;
@@ -2535,11 +2535,11 @@ header.one-page .navbar-nav > li > a span {
   color: #FFFFFF;
   text-align: center;
   font-size: 36px;
-  line-height: 24px;
+  line-height: 40px;
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
   margin: 24px 0;
-  text-transform: uppercase;
+  text-transform: inherit;
   letter-spacing: 0.03em;
 }
 .page-header .page-breadcrumb {
@@ -2569,7 +2569,7 @@ header.one-page .navbar-nav > li > a span {
 .single-post .single-post-title h2 {
   font-size: 24px;
   line-height: 30px;
-  text-transform: uppercase;
+  text-transform: inherit;
 }
 .single-post .single-post-title .single-post-meta {
   font-size: 16px;
@@ -4152,7 +4152,7 @@ footer {
     display: none;
   }
   .navbar-default .navbar-nav > li > a {
-    padding: 10px 8px;
+    padding: 10px 4px;
   }
 }
 /* Tablet Portrait size to standard 960 (devices and browsers) */
@@ -4358,7 +4358,6 @@ footer {
     text-align: left;
   }
   .navbar-default .navbar-collapse {
-    background: #0d0d0d;
     margin-top: 12px;
     padding: 12px 0;
   }
@@ -4395,7 +4394,6 @@ footer {
     margin: 0px;
     width: 100%;
     text-align: left;
-    background: rgba(0, 0, 0, 0.7);
   }
   .navbar-default .navbar-nav li a {
     font-weight: bold;
@@ -4517,7 +4515,6 @@ footer {
     margin: 0px;
     width: 100%;
     text-align: left;
-    background: rgba(0, 0, 0, 0.7);
   }
   .navbar-default .navbar-nav li {
     margin-left: 0px;
