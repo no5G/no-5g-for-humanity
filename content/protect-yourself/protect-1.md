@@ -5,6 +5,7 @@ categories: []
 tags: []
 featured_image: "/images/action_1.jpg"
 author: Richard
+draft: true
 
 ---
 {{< youtube Q1udteoWGXU >}}
