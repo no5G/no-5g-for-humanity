@@ -1,6 +1,7 @@
 ---
 title: How to protect yourself from 5G
 date: 2021-02-08T20:09:27.000-05:00
+featured_image: "/images/5g-fcc-lawsuit-feature-1-800x417.jpg"
 type: page
 layout: protect-yourself
 
