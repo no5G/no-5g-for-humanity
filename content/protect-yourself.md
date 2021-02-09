@@ -1,9 +1,9 @@
 ---
 title: How to protect yourself from 5G
 date: 2021-02-08T20:09:27.000-05:00
+featured_image: "/images/about_us.jpg"
 type: page
 layout: protect-yourself
-featured_image: "/images/5g-fcc-lawsuit-feature-1-800x417.jpg"
 
 ---
 The subject of 5G will be illusory for a longtime. Something like the dangers of smoking; is a cell phone located next to your head dangerous, are drugs harmful? These are matters that are hidden from most of society. Those selling you these services know best. Right?
