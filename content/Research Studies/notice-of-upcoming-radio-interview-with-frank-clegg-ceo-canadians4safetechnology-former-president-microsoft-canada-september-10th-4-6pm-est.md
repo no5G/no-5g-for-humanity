@@ -3,7 +3,7 @@ categories = ["Frank Clegg", "Interview", "CHCR"]
 date = 2021-02-03T22:58:00Z
 featured_image = "/images/image002.png"
 tags = ["Frank Clegg", "Interview", "CHCR"]
-title = "Notice of upcoming Radio Interview with Frank Clegg, CEO Canadians4SafeTechnology (former President Microsoft Canada) September 10th 4-6pm est"
+title = "Notice of upcoming Radio Interview with Frank Clegg, CEO Canadians4SafeTechnology (former President Microsoft Canada)"
 
 +++
 Hi everyone,
