@@ -60,8 +60,16 @@ div.contact-page div.row div div.social-icons a {
     color: #eb893d;
 }
 
+.padding-top-double {
+    padding-top: 3em;
+}
+
 .blue {
     color: #295099!important;
+}
+
+.white {
+    color: #fff!important;
 }
 
 /* FOOTER */
