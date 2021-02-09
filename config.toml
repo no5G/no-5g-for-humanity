@@ -2,7 +2,7 @@ baseURL = "https://no-5g-for-humanity.netlify.app/"
 languageCode = "en-us"
 title = "5G Website"
 mainSections = ["Research Studies"]
-paginate = 3
+paginate = 6
 summarylength = 66
 
 
