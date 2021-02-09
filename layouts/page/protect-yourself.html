@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+<!--  PAGE HEADING -->
+
+<section class="page-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <h3>{{ .Title }}</h3>
+      </div>
+    </div> <!-- end .row  -->
+  </div> <!-- end .container  -->
+</section> <!-- end .page-header  -->
+
+<section class="section-content-block take-section section-secondary-bg">
+  <div class="container">     
+    <div class="row">
+      <div class="take-action">   
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">    
+          <div class="action-text">
+            <h2 class="section-heading-inline">{{ .Title }}</h2>
+            <p>{{ .Content }}</p>                            
+          </div> <!--  end .Action-text  -->
+        </div>
+        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">    
+          <figure>
+              {{ with .Params.featured_image }}
+              <img src="{{ . }}" alt="{{ with $.Page.Params.title }}{{ . }}{{ end }}" />
+              {{ end }}                               
+          </figure> <!-- end .action-img  -->
+        </div>
+      </div> <!-- end .take-action -->
+    </div>
+  </div> <!-- end .container  -->
+</section> <!-- end .take-action  -->
+
+{{ end }}    
