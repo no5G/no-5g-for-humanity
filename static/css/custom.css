@@ -36,7 +36,8 @@ section.section-banner h2.banner-heading {
 a.btn-load-more,
 .section-counter .section-counter-heading .counter-button,
 .who-are-we .about-us .about-us-text .about-us-button,
-.cause-wrapper .cause-link .cause-button1 {
+.cause-wrapper .cause-link .cause-button1,
+article.single-post div.single-post-title p a.readmore {
     color: #ffffff;
     background: #295099;
     border: 1px solid #295099;
@@ -45,7 +46,8 @@ a.btn-load-more,
 a.btn-load-more:hover,
 .section-counter .section-counter-heading .counter-button:hover,
 .who-are-we .about-us .about-us-text .about-us-button:hover,
-.cause-wrapper .cause-link .cause-button1:hover {
+.cause-wrapper .cause-link .cause-button1:hover,
+article.single-post div.single-post-title p a.readmore:hover {
     color: #295099;
     background: #ffffff;
     border: 1px solid #295099;
