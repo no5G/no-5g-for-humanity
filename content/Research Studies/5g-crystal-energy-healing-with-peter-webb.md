@@ -8,7 +8,6 @@ tags:
 - Peter Webb
 - Crystal Healing
 featured_image: "/images/crystal-healing.jpg"
-author: Richard
 
 ---
 {{< youtube Q1udteoWGXU >}}
