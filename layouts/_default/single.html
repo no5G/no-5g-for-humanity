@@ -162,34 +162,36 @@
 
       </div> <!--  end .single-post-container -->
       <div class="col-md-4 col-sm-12">  
-        {{ if .Params.categories }}         
+        {{ if .Site.Taxonomies.categories }}       
         <div class="widget site-sidebar">
           <h2 class="widget-title">Categories</h2>
-          <ul class="widget-post-category clearfix">
-            {{ range .Params.categories }}
-            <li>
-              <a title="{{ . }}" href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-              <!-- <span class="pull-right badge">42</span> -->
-            </li>
-            {{ end }}
-          </ul>
+            <ul class="widget-post-category clearfix">
+              {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+              {{ $url := printf "%s/%s" "categories" ($name | urlize | lower)}}
+              <li>
+                <a title="View all posts filed under Environment" href="{{ $url | absURL }}">{{$name}}</a>
+                <!-- <span class="pull-right badge">42</span> -->
+              </li>
+              {{ end }}
+            </ul>
         </div> <!--  end .widget -->
         {{ end }}
         <!-- <div class="widget site-sidebar">
           <h2 class="widget-title">Recent Posts</h2>
           <div class="single-recent-post">
-              <img alt="" class="single-post-thumb" src="/images/gallery_6.jpg">
-              <a href="#">Zomato Commits to Making Food Delivery Safer </a>
-              <span><i class="fa fa-calendar icon-color"></i>&nbsp;January 19, 2016</span>
+            <img alt="" class="single-post-thumb" src="/images/gallery_6.jpg">
+            <a href="#">Zomato Commits to Making Food Delivery Safer </a>
+            <span><i class="fa fa-calendar icon-color"></i>&nbsp;January 19, 2016</span>
           </div>
         </div> -->
-        {{ if .Params.tags }}
+        {{ if .Site.Taxonomies.tags }}
         <div class="widget site-sidebar">
           <h2 class="widget-title">Tags</h2>
           <ul class="widget-recent-tags clearfix">
-            {{ range .Params.tags }}
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+            {{ $url := printf "%s/%s" "tags" ($name | urlize | lower)}}
             <li>
-              <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" title="{{ . }}"> {{ . }}</a> 
+              <a href="{{ $url | absURL }}" title="{{$name}}"> {{$name}}</a>
             </li>
             {{ end }}
           </ul><!--  end .widget-recent-tags -->
