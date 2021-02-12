@@ -4,7 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-12 text-center">
-          <h3>5G Radiation</h3>
+          <h3>{{ .Title }}</h3>
         </div>
       </div> <!-- end .row  -->
     </div> <!-- end .container  -->
@@ -15,20 +15,32 @@
     <div class="container">   
       <div class="row">
         <div class="about-us">        
-          <div class="col-md-6 col-sm-12 col-xs-12">  
+          <div class="col-md-10 col-sm-12 col-xs-12">  
             <div class="about-us-text">
-              <h2 class="section-heading-inline">What is 5G Radiation?</h2>
+              <h2 class="section-heading-inline no-hyphen blue">{{ .Title }}</h2>
               {{ with $.Site.GetPage "page" "5g-radiation.md" }}
               {{  .Content }}
               {{  end }}
             </div> <!--  end .About-text  -->            
           </div>
-          <div class="col-md-6 col-sm-12 hidden-xs">  
+          <!-- <div class="col-md-5 col-sm-12 hidden-xs">  
             <figure class="about-us-img">
-              <img src="/images/about_us.jpg" alt="About_image" />             
-            </figure> <!-- end .About-img  -->
-          </div>             
+              <img src="/images/about_us.jpg" alt="About_image" />           
+            </figure>
+          </div>  -->            
         </div> <!-- end .about action -->             
+      </div>
+      <hr>
+      <div class="row padding-top-double">
+        <div class="col-md-6">
+          <figure class="about-us-img">
+            <a target="_the_energy_connection" href="https://www.lulu.com/en/us/shop/richard-jackman/the-energy-connection/paperback/product-14m98zpm.html?page=1&pageSize=4"><img src="/images/the-energy-connection.jpg" alt="The Energy Connection Book" /></a>           
+          </figure> <!-- end .About-img  -->
+        </div>
+        <div class="col-md-6">
+          <h4 class="blue">The Energy Connection</h4>
+          <p>The Energy Connection attempts to provide a road map for a path less travelled. The thinking behind, "We are all energy", requires a special mind and a soul ready to take the next step. "What if" all of 'our world' was simply composed of vibrating particles just waiting for us to put them in motion through our conscious minds? The book is written as an introduction to all those who have never contemplated this possibility and particularly the consequences. The possibility that we are composed of energy fields, chakras and the smallest particles known to humankind is a different take on life. So this is a 'Energy 101' text book that allows you to safely enter this wonderous world of possibilities. It is here that your past, present and future exists. The primary author is a lawyer. He comes from a 'prove it to me' world. After examining the evidence, the facts all point to a fascinating place that we all need to learn how to access and understand. Our future, health and abundance depend upon it!</p>
+        </div>
       </div>
     </div> <!-- end .container  -->
   </section> <!-- end .about-section-  -->
