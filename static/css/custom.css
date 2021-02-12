@@ -21,6 +21,12 @@
     transition: 0.3s 0.2s ease-out;
 }
 
+h2 {
+    text-transform: inherit;
+    font-size: 32px;
+    line-height: 36px;
+}
+
 section.section-banner h2.banner-heading {
     text-shadow: 1px 1px #000;
 }
