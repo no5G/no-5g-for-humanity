@@ -6,7 +6,6 @@ tags = ["Legal Action", "International"]
 title = "Message from Julian Gresser, 5G-International Legal Action Network re FCC and Declaration"
 
 +++
-![image001.jpg](https://www.fastmailusercontent.com/jmap/download/u9a0940ce/G6a1c14c97af85a45456d9ab4c1a7d251170bbfdc/image001.jpg?u=9a0940ce&access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI4NjVmNThhZGY5YjU4ZTNjNzZiYzBiOGYyY2EzY2ZhMWFkYjUxOTg0Iiwic3ViIjoiQ3lBOG52MVFuSVpURjdTbUVHSF9VSVh3THdnMDA4amNBeWVVMkE4NjM0VSIsImlhdCI6MTYxMjM4OTYwMH0.QZCy0vNX5eLiWBMrTeC90SFcIIkIqnyWcS9iCETfcps&accept=image%2Fjpeg)  
 Dear Colleagues,
 
 We are deeply grateful for your signatures on behalf of your organizations endorsing the [Healthy Heavens Trust Declaration](https://www.5g-ilan.com/hhti-declaration), which we will cite in the forthcoming FCC Petition for Emergency/Expedited Rulemaking on the blanket licensing of 80,000+ satellites and millions of earth stations.
