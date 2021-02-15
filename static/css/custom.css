@@ -68,6 +68,12 @@ div.contact-page div.row div div.social-icons a {
     color: #eb893d;
 }
 
+section.who-are-we figure.about-us-img .book-btn {
+    margin-top: 0.25em;
+    width: 21.35em;
+    text-transform: initial;
+}
+
 .padding-top-double {
     padding-top: 3em;
 }
