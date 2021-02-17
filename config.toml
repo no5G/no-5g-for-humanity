@@ -1,6 +1,6 @@
 baseURL = "https://no-5g-for-humanity.netlify.app/"
 languageCode = "en-us"
-title = "5G Website"
+title = "No 5G for Humanity"
 mainSections = ["Research Studies"]
 paginate = 6
 summarylength = 66
