@@ -1,0 +1,7 @@
+[[redirects]]
+  from = "https://no5gforhumanity.ca/"
+  to = "https://no5gforhumanity.com/"
+  status = 301
+  force = false
+  query = {path = ":path"}
+  conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
