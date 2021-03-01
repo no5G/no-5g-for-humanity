@@ -1,0 +1,43 @@
+---
+label: Events
+hide_body: false
+fields:
+- type: list
+  name: categories
+  label: categories
+- type: datetime
+  name: date
+  label: date
+- type: file
+  name: featured_image
+  label: featured_image
+- type: list
+  name: tags
+  label: tags
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: author
+  label: author
+- type: text
+  name: authorbio
+  label: authorbio
+- type: text
+  name: phone
+  label: phone
+- type: text
+  name: email
+  label: email
+- type: text
+  name: website
+  label: website
+- type: text
+  name: venue
+  label: venue
