@@ -14,11 +14,15 @@ sections:
   label: Research studies
   create: all
   match: "**/*"
+  templates:
+  - research-studies
 - type: directory
   path: content/Events
   label: Events
   create: all
   match: "**/*"
+  templates:
+  - events
 upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
