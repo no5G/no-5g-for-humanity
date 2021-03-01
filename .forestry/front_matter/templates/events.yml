@@ -11,9 +11,35 @@ fields:
 - type: datetime
   name: date
   label: date
+- type: text
+  name: venue
+  label: venue
+- type: text
+  name: phone
+  label: phone
+- type: text
+  name: email
+  label: email
+- type: text
+  name: website
+  label: website
+- type: text
+  name: author
+  label: author
+- type: text
+  name: authorbio
+  label: authorbio
 - type: list
   name: categories
   label: categories
 - type: list
   name: tags
   label: tags
+- type: text
+  name: type
+  label: type
+- type: text
+  name: layout
+  label: layout
+pages:
+- content/Events/event.md
