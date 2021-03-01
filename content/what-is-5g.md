@@ -19,3 +19,7 @@ There is a book, initially published in 1996, entitled ‘The Conscious Mind’,
 Please take the time to read the short summary of ‘The Conscious Mind’ and consider investigating this site and its contents. This may sound like a Science fiction movie theme, but it is not. It is time we all took responsibility for our ‘energy/energetic’ future. If you are interested in learning more let us know. Please help us raise the funds to challenge the Federal Government to start effective scientific experiments that will educate and protect everyone. Thanks!
 
 Please also check this web site for stories about EMFs ([https://wearetheevidence.org/](https://wearetheevidence.org/ "https://wearetheevidence.org/")).
+
+Just in case you haven’t heard this good news already - the No5G Party has been registered as a Federal political party in Australia. Please visit our website, watch three promotional videos on the Home page and spread the news - [No5Gparty.org.au](https://no5gparty.org.au/)
+
+Fast growing membership will support our mission to create a healthier and safer world, in which the environment and our freedom are protected and cherished.
