@@ -1,7 +1,6 @@
 +++
 categories = ["David Zarnett"]
 date = 2021-02-28T23:00:00Z
-draft = true
 featured_image = "/images/5g-technology.jpg"
 tags = ["David Zarnett"]
 title = "Threats to security, health, public infrastructure—and other potential costs of Canada's 5G rollout"
