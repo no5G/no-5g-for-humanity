@@ -1,7 +1,7 @@
 baseURL = "https://no5gforhumanity.com/"
 languageCode = "en-us"
 title = "No 5G for Humanity"
-mainSections = ["Research Studies", "Events"]
+mainSections = ["research-studies", "events"]
 paginate = 6
 summarylength = 66
 
