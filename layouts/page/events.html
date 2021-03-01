@@ -1,0 +1,83 @@
+{{ define "main" }}
+  <!--  PAGE HEADING -->
+  <section class="page-header" data-stellar-background-ratio="0.1">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h3>{{ .Title }}</h3>
+        </div>
+      </div> <!-- end .row  -->
+    </div> <!-- end .container  -->
+  </section> <!-- end .page-header  -->
+  <!--  EVENT SECTION  -->
+  <section class="section-content-block event-section-1 section-secondary-bg">
+    <div class="container wow fadeInUp">
+      <div class="row section-heading-wrapper">
+        <div class="col-md-12 col-sm-12">
+          <h2 class="section-heading center-text">Upcoming Events</h2>
+          <p>Here we go!  There is lots of work to do!  We are starting from ground zero.  Well not quite!  This web site is full of educational information.  Please avail yourself of it.  Have lots of questions.  We need to help each other understand that we are energy creations and what 5G will do to our wellbeing and the health of our children and grandchildren!  Indigenous cultures made decisions based upon the best interests of the seventh generation.</p>
+          <p>In terms of events we are committing to regular Zoom calls as soon as we have an e-mail list of at least 30 people.  That can be created by sending an e-mail to info@no5gforhumanity.com indicating a willingness to be contacted and invited.  We will have lots of interesting guests. One might be you?</p>
+          <p>Please join us on this important journey.</p>
+          <p>Thank you.</p>
+
+          </p>
+        </div> <!-- end .col-sm-10  -->
+      </div> <!-- end .row  -->
+      <div class="row">
+        {{ range .Paginator.Pages }}
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="event_wrapper-1 xs-margin">
+            <figure class="event-img">
+              {{ with .Params.featured_image }}
+              <img src="{{ . }}" alt="{{ with $.Page.Params.title }}{{ . }}{{ end }}">
+              {{ end }}
+            </figure> <!-- end .event-img  -->
+            <div class="event-text">
+              <span class="event-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>
+              <p class="event-time"><i class="fa fa-clock-o"></i> {{ dateFormat "Monday, Jan 2, 2006 – 15:04 MST" .Date }}</p>                                     
+              <h5><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
+              <p>{{ .Summary }}</p>
+              {{ if .Params.categories }}
+              <p class="event-location"><i class="fa fa-map-marker"></i> {{ range .Params.categories }}
+              &nbsp;{{ . }}
+              {{ end }}</p>
+              {{ end }}
+            </div> <!--  end .event-text  -->							
+          </div><!-- end .custom-event-list-wrapper -->
+        </div> <!-- end .col-md-4  -->
+        {{ end }}
+      </div> <!-- end .row  -->
+      <div class="blog-pagination text-center clearfix">  
+        {{ $pag := $.Paginator }}
+        {{ if gt $pag.TotalPages 1 }}              
+        <ul class="pagination">
+          {{ $pag := $.Paginator }}
+          {{ if gt $pag.TotalPages 1 }}
+          {{ $.Scratch.Set "dot_rendered" false }}
+            {{ if $pag.HasPrev  }}
+            <li><a href="{{ $pag.Prev.URL }}" class="prev page-numbers"><i class="fa fa-caret-left"></i></a></li>
+            {{ end }}
+
+            {{ range $pag.Pagers }}
+              {{ if eq . $pag }} <!-- Current Page -->
+              <li class="active"><a href="#" class="page-numbers">{{ .PageNumber }}</a></li>
+              {{ else if and (ge .PageNumber (sub $pag.PageNumber 2)) (le .PageNumber (add $pag.PageNumber 2)) }}
+              {{ $.Scratch.Set "dot_rendered" false }} <!-- Render prev 2 page and next 2 pages -->
+              <li><a href="{{ .URL }}" class="page-numbers current">{{ .PageNumber }}</a></li>
+              {{ else if eq ($.Scratch.Get "dot_rendered") false }} <!-- render skip pages -->
+              {{ $.Scratch.Set "dot_rendered" true }}
+              <li class="disabled"><a class="page-numbers">...</a></li>
+              {{ end }}
+            {{ end }}
+
+            {{ if $pag.HasNext }}
+            <li><a href="{{ $pag.Next.URL }}" class="next page-numbers"><i class="fa fa-caret-right"></i></a></li>
+            {{ end }}
+          {{ end }}
+        </ul> <!-- end pagination  -->
+        {{ end }}
+      </div> <!--  end blog-pagination -->
+    </div> <!-- end .container  -->
+  </section> <!-- end .event-section-1  -->
+
+{{ end }}
