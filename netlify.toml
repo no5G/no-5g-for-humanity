@@ -5,3 +5,6 @@
   force = false
   query = {path = ":path"}
   conditions = {Language = ["en"], Country = ["US"], Role = ["admin"]}
+
+  [build.environment]
+  TZ = "America/New_York"
