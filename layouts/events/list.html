@@ -28,8 +28,8 @@
               {{ end }}
             </figure> <!-- end .event-img  -->
             <div class="event-text">
-              <span class="event-date">{{ dateFormat "Jan 2, 2006" .Date.Local }}</span>
-              <p class="event-time"><i class="fa fa-clock-o"></i> {{ dateFormat "Monday, Jan 2, 2006 – 15:04 EST" .Date.Local }}</p>                                     
+              <span class="event-date">{{ dateFormat "Jan 2, 2006" .Date }}</span>
+              <p class="event-time"><i class="fa fa-clock-o"></i> {{ dateFormat "Monday, Jan 2, 2006 – 15:04 EST" .Date }}</p>                                     
               <h5><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
               <p>{{ .Summary }}</p>
               {{ if .Params.categories }}
