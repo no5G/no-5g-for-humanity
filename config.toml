@@ -11,5 +11,5 @@ summarylength = 66
   authorbio = "Advicate against 5G."
 
 [build.environment]
-  TZ = "America/Toronto"
+  TZ = "America/New_York"
 
