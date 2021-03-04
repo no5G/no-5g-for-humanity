@@ -29,7 +29,7 @@
           <div class="col-sm-4">
             <h4 class="event-content-title">Details</h4>
             <p class="event-content-info">
-              <span class="event-sub-content-title">Date:  <em class="date">{{ dateFormat "Monday, Jan 2, 2006 – 15:04 EST" .Date }}</em></span>
+              <span class="event-sub-content-title">Date:  <em class="date">{{ dateFormat "Monday, Jan 2, 2006 – 15:04 EST" .Date.Local }}</em></span>
               <span class="event-sub-content-title">Event Category:</span>
               {{ if .Params.categories }}
               {{ range .Params.categories }}
